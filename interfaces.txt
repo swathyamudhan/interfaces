@@ -1,0 +1,27 @@
+::::::::::Interfaces::::::::::
+Agreements/Contracts
+	When a person joins a workplace, say like a hotel, that person signs a job contract. The contract says that a server should take the orders from customers, bring the food, collect the payment and cleans the table. Now, whenever a customer comes to a hotel knows that. They can simply call a server(the person who has signed the work contract with that hotel), and order food, eat and pays the bill. The customer need not know about the name of the person, or height, weight or any information about the person who is a server.
+	A customer does not need to know that how fast the server walks to the kitchen, or which way he takes, which dress he wears or even in which language he speaks. Each server in a hotel may have unique characteristics. They can be of different heights, weights, origins, languages, gender.
+	This applies in all the situations. We simply know about the tasks some one or some machine can do and we ask that person or machine to do that task for us. Most of the times we simply don't care how that task gets done.
+	A phone is a prime example. All the phones have some common features like calls, messages, contacts, musics, movies etc. A Nokia may have implemented the call feature differently than a Samsung. But since they are phones, the action that they do when you press a call button is the same.
+	A bank employee implements Bank interface, a two wheeler mechanic implements TwoWheelerShop interface, a chef implements kitchen interface.
+	A java interface is like a contract or an agreement. When a class implements an interface, it must perform all the operations that the interface it implements defines. 
+	For example, consider the Phone interface below
+
+interface Phone {
+
+	public void call();
+	
+	public void sendMessage();
+	
+	public void receiveMessage(String message);
+	
+	public String getContact(String name);
+	
+	public void storeContactInformation(String name, String phoneNumber);
+	
+}
+
+This interface says that which ever class implements it must create 5 methods - call, sendMessage, receiveMessage, getContact, storeContactInformation.
+
+We can create a class called Nokia that implements Phone interface. We can also create a class named Apple that implements Phone. These two classes can be completely different, but they will do whatever defined in the Phone interface.
